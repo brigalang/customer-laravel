@@ -1,52 +1,97 @@
-<x-head />
 
-<body class="bg-gray-50">
-    <header class="py-10 px-2 md:px-40">
-        <nav class="flex justify-between">
-            <div class="flex">
-                <img class="mr-2" src="" alt="logo">
-                <a href="/index">
-                    <h1 class="font-semibold text-xl">Reservoir | Shopping Cart</h1>
-                </a>
-            </div>
+<div class="overflow-x-auto relative shadow-md sm:rounded-lg mx-20 h-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="py-3 px-6 text-center ">
+                    Image
+                </th>
+                <th scope="col" class="py-3 px-6 text-center">
+                    Vendor
+                </th>
+                <th scope="col" class="py-3 px-6 text-center">
+                    Product
+                </th>
+                <th scope="col" class="py-3 px-6 text-center">
+                    Qty
+                </th>
+                <th scope="col" class="py-3 px-6 text-center">
+                    Price
+                </th>
+                <th scope="col" class="py-3 px-6 text-center">
+                    Status
+                </th>
+            </tr>
+        </thead>
+        <tbody>
 
-            <form class="flex items-center" action="" method="get">
-                <div class="border border-gray-500 p-1 w-60 rounded-md">
-                    <input class="border-none outline-none w-full" type="text"
-                        placeholder="Search item in your cart here">
-                </div>
-                <button type="submit" class="bg-blue-300 p-2 rounded-md hover:bg-blue-400">
-                    <x-icon name="search" />
-                </button>
-            </form>
-        </nav>
-    </header>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="p-4 w-32">
+                    <img src="https://mount-pure.com/wp-content/uploads/2022/02/DSC08058-Enhanced-removebg-preview-e1645171427282.png" alt="Apple Watch">
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    Mountain Drops WRS
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    5 Gallon Round - Alkaline
+                </td>
+                <td class="py-4 px-6 text-center">
+                    <div class="flex items-center space-x-3">
+                        10
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    ₱35
+                </td>
+                <td class="py-4 px-6 text-center">
+                    <a href="#" class="font-medium text-teal-600 dark:text-teal-500 hover:underline">Delivered</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="p-4 w-32">
+                    <img src="https://mount-pure.com/wp-content/uploads/2022/02/DSC08058-Enhanced-removebg-preview-e1645171427282.png" alt="Apple Imac">
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    5 Gallon Round - Electrolyte
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    H20 Option WRS
+                </td>
+                <td class="py-4 px-6 text-center">
+                    <div class="flex items-center space-x-3">
+                        6
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    ₱35
+                </td>
 
-    {{ $slot }}
-
-
-    <footer class="bg-white h-36 mt-10 border-t-2 border-blue-500 flex items-center px-10">
-        <div>Footer Here</div>
-    </footer>
-
-    <script>
-        $(document).ready(function() {
-            $('.minus').click(function() {
-                var $input = $(this).parent().find('input');
-                var count = parseInt($input.val()) - 1;
-                count = count < 1 ? 1 : count;
-                $input.val(count);
-                $input.change();
-                return false;
-            });
-            $('.plus').click(function() {
-                var $input = $(this).parent().find('input');
-                $input.val(parseInt($input.val()) + 1);
-                $input.change();
-                return false;
-            });
-        });
-    </script>
-</body>
-
-</html>
+                <td class="py-4 px-6 text-center">
+                    <a href="#" class="font-medium text-teal-600 dark:text-teal-500 hover:underline">Delivered</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="p-4 w-32">
+                    <img src="https://mount-pure.com/wp-content/uploads/2022/02/DSC08058-Enhanced-removebg-preview-e1645171427282.png" alt="Iphone 12">
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    Sapang Kalawang WRS
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    5 Gallon Round - Alkaline
+                </td>
+                <td class="py-4 px-6 text-center">
+                    <div class="flex items-center space-x-3">
+                        5
+                    </div>
+                </td>
+                <td class="py-4 px-6 text-center font-semibold text-gray-900 dark:text-white">
+                    ₱25
+                </td>
+                <td class="py-4 px-6 text-center">
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">To be Delivered</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
