@@ -1,7 +1,7 @@
 <x-head>Reservoir | Checkout</x-head>
 <x-layout>
 
-    <div class="h-screen grid grid-cols-3">
+    <div class="h-screen px-48 grid grid-cols-3">
         <div class="lg:col-span-2 col-span-3 bg-indigo-50 space-y-8 px-12">
             <div class="mt-8 p-4 relative flex flex-col sm:flex-row sm:items-center bg-white shadow rounded-md">
                 <div class="flex flex-row items-center border-b sm:border-b-0 w-full sm:w-auto pb-4 sm:pb-0">

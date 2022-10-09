@@ -23,15 +23,13 @@
     </div>
     <div class="carousel-inner relative w-full overflow-hidden">
       <div class="carousel-item active float-left w-full">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+        <img src="{{asset("img/banner1.png")}}" alt=""
           class="block w-full"
           alt="Wild Landscape"
         />
       </div>
       <div class="carousel-item float-left w-full">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+        <img src="{{asset("img/banner2.png")}}" alt=""
           class="block w-full"
           alt="Camera"
         />

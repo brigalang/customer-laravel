@@ -1,12 +1,12 @@
 
-
+<x-cart/>
 <body class="font-Poppins">
     <main class="">
         <header
             class="flex flex-row-reverse justify-between relative z-1 gap-2 p-5 md:items-center md:justify-center md:p-10 md:grid md:grid-cols-8 lg:p-12 ">
-            <div class="p-1 rounded-xl border gap-x-2 flex items-center md:col-span-2">
-                <ion-icon name="search-outline"></ion-icon>
-                <input type="text" class="placeholder:text-gray-400 outline-0 w-full" placeholder="search">
+            <div class="p-1.5 rounded-xl border gap-x-2 flex items-center md:col-span-2">
+                <input type="text" class="placeholder:text-gray-400 outline-0 rounded-xl w-full" placeholder="search">
+                <a href=""><ion-icon name="search-outline" class="ml-1 mr-2"></ion-icon></a>
             </div>
             <a class="flex items-center uppercase font-black text-2xl md:text-3xl md:justify-center md:col-span-4"
                 href="/">
@@ -14,22 +14,22 @@
             </a>
             <div class="hidden md:flex items-center justify-center gap-8 text-lg font-medium md:col-span-2">
                 <x-nav-item>
-                    <ion-icon name="cart-outline"></ion-icon>
+                    <ion-icon name="cart-outline" class="h-7 w-7"></ion-icon>
                     <span class="uppercase text-xs"><a onclick="showCart()" >Cart</a></span>
                 </x-nav-item>
 
                 <x-nav-item>
-                    <ion-icon name="bag-outline"></ion-icon>
+                    <ion-icon name="bag-outline" class="h-7 w-7"></ion-icon>
                     <span class="uppercase text-xs"><a href="/myOrders">Orders</a></span>
                 </x-nav-item>
 
                 <x-nav-item>
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                    <ion-icon name="chatbubbles-outline" class="h-7 w-7"></ion-icon>
                     <span class="uppercase text-xs"><a href="/chat">Chat</a></span>
                 </x-nav-item>
 
                 <x-nav-item>
-                    <ion-icon name="person-outline"></ion-icon>
+                    <ion-icon name="person-outline" class="h-7 w-7"></ion-icon>
                     <span class="uppercase text-xs"><a href="/account">Account</a></span>
                 </x-nav-item>
             </div>

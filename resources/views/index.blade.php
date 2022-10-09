@@ -1,8 +1,8 @@
 <x-head>Reservoir | Home</x-head>
 <x-layout>
-    <x-cart/>
 
-    <main class="grid gap-2 lg:px-[250px] py-5">
+
+    <main class="grid gap-2 lg:px-[250px] py-5 drop-shadow-xl">
         <div class="grid grid-cols-1 bg-orange-50 h-60 lg:gap-1 lg:grid-cols-8 overflow-y-hidden">
             <div class="bg-green-50 h-auto lg:col-span-5 z-0 ">
                 <x-carousel />
