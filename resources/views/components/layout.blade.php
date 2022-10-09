@@ -3,40 +3,46 @@
 <body class="font-Poppins">
     <main class="">
         <header
-            class="flex flex-row-reverse justify-between relative z-1 gap-2 p-5 md:items-center md:justify-center md:p-10 md:grid md:grid-cols-8 lg:p-12 ">
+            class="flex flex-row-reverse shadow-md justify-between relative z-1 gap-2 p-5 md:items-center md:justify-center md:p-10 md:grid md:grid-cols-8 lg:p-10 ">
             <div class="p-1.5 rounded-xl border gap-x-2 flex items-center md:col-span-2">
                 <input type="text" class="placeholder:text-gray-400 outline-0 rounded-xl w-full" placeholder="search">
                 <a href=""><ion-icon name="search-outline" class="ml-1 mr-2"></ion-icon></a>
             </div>
             <a class="flex items-center uppercase font-black text-2xl md:text-3xl md:justify-center md:col-span-4"
                 href="/">
-                <h1 class="cursor-pointer hover:text-sky-400">Reservoir</h1>
+                <h1 class="cursor-pointer hover:text-teal-400">Reservoir</h1>
             </a>
             <div class="hidden md:flex items-center justify-center gap-8 text-lg font-medium md:col-span-2">
-                <x-nav-item>
-                    <ion-icon name="cart-outline" class="h-7 w-7"></ion-icon>
-                    <span class="uppercase text-xs"><a onclick="showCart()" >Cart</a></span>
+                <a onclick="showCart()" >
+                    <x-nav-item>
+                        <ion-icon name="cart-outline" class="h-7 w-7"></ion-icon>
+                        <span class="uppercase text-xs">Cart</span>
+                    </x-nav-item>
+                </a>
+                <a href="/myOrders">
+                    <x-nav-item>
+                        <ion-icon name="bag-outline" class="h-7 w-7"></ion-icon>
+                        <span class="uppercase text-xs">Orders</span>
+                    </x-nav-item>
+                </a>
+                <a href="/chat">
+                    <x-nav-item>
+                        <ion-icon name="chatbubbles-outline" class="h-7 w-7"></ion-icon>
+                        <span class="uppercase text-xs">Chat</span>
+                    </x-nav-item>
+                </a>
+                <a href="/account">
+                    <x-nav-item>
+                        <ion-icon name="person-outline" class="h-7 w-7"></ion-icon>
+                        <span class="uppercase text-xs">Account</span>
                 </x-nav-item>
+            </a>
 
-                <x-nav-item>
-                    <ion-icon name="bag-outline" class="h-7 w-7"></ion-icon>
-                    <span class="uppercase text-xs"><a href="/myOrders">Orders</a></span>
-                </x-nav-item>
-
-                <x-nav-item>
-                    <ion-icon name="chatbubbles-outline" class="h-7 w-7"></ion-icon>
-                    <span class="uppercase text-xs"><a href="/chat">Chat</a></span>
-                </x-nav-item>
-
-                <x-nav-item>
-                    <ion-icon name="person-outline" class="h-7 w-7"></ion-icon>
-                    <span class="uppercase text-xs"><a href="/account">Account</a></span>
-                </x-nav-item>
             </div>
             <div class="flex items-center md:hidden" onclick="openNav()">
                 <ion-icon name="menu-outline" class="text-xl"></ion-icon>
             </div>
-            <div class="sidenav hidden fixed bg-sky-200 z-2 left-0 top-0 overflow-x-hidden duration-[0.5s] pt-[60px] h-screen md:hidden"
+            <div class="sidenav hidden absolute bg-sky-200 z-40 left-0 top-0 overflow-x-hidden duration-[0.5s] pt-[60px] h-screen md:hidden"
                 id="mySidenav">
                 <a class="flex justify-end text-xl px-2" href="javascript:void(0)" class="closebtn"
                     onclick="closeNav()">&times;</a>
@@ -102,11 +108,8 @@
             <div class="lg:w-2/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DO YOU HAVE WATER-REFILLING STATION?</h2>
               <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-                <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                  <label for="footer-field" class="leading-7 text-sm text-gray-600">Become a Seller Now!</label>
-                  <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-teal-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Sign Up</button>
+
+                <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-teal-500 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded">Become a Seller Now!</button>
               </div>
               <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
                 <br class="lg:block hidden">waistcoat green juice
@@ -117,9 +120,7 @@
         <div class="bg-gray-100">
           <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
+              <img src="{{asset("img/logo.png")}}" alt="" class="h-7 w-7">
               <span class="ml-3 text-xl">Reservoir</span>
             </a>
             <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2022 RESERVOIR  </p>

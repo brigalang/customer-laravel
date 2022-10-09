@@ -1,6 +1,6 @@
 
-    <div class="p-auto w-fit bg-teal-100 " >
-        <div class="p-5 bg-white shadow mt-24">
+    <div class="p-auto w-1/3 shadow-md bg-teal-100 " >
+        <div class="p-4 h-screen bg-white mt-24">
             <div class="grid grid-cols-2 md:grid-cols-2 mb-10">
                 <div class="relative align-center mb-20">
                     <div class="w-48 h-48 bg-indigo-100  mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500 overflow-hidden">
@@ -9,7 +9,7 @@
                 </div>
                 <div class="grid grid-cols-1 text-center  ml-10 ">
                     <a href="/editProfile">
-                        <button class="text-white py-2 px-4 uppercase rounded bg-blue-400 hover:bg-blue-500 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
+                        <button class="text-white py-2.5 px-4 uppercase rounded bg-teal-400 hover:bg-teal-500 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
                             Edit Profile
                         </button>
                     </a>
