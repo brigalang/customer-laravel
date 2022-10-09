@@ -1,3 +1,4 @@
+<x-head>Reservoir | Checkout</x-head>
 <x-layout>
 
     <div class="h-screen grid grid-cols-3">

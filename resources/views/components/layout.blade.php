@@ -1,4 +1,4 @@
-<x-head />
+
 
 <body class="font-Poppins">
     <main class="">
@@ -14,23 +14,23 @@
             </a>
             <div class="hidden md:flex items-center justify-center gap-8 text-lg font-medium md:col-span-2">
                 <x-nav-item>
-                    <ion-icon name="person-outline"></ion-icon>
-                    <span class="uppercase text-xs"><a href="/account">Account</a></span>
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span class="uppercase text-xs"><a onclick="showCart()" >Cart</a></span>
                 </x-nav-item>
 
                 <x-nav-item>
                     <ion-icon name="bag-outline"></ion-icon>
-                    <span class="uppercase text-xs"><a href="/myOrders">My Orders</a></span>
-                </x-nav-item>
-
-                <x-nav-item>
-                    <ion-icon name="cart-outline"></ion-icon>
-                    <span class="uppercase text-xs"><a href="/cart">My Cart</a></span>
+                    <span class="uppercase text-xs"><a href="/myOrders">Orders</a></span>
                 </x-nav-item>
 
                 <x-nav-item>
                     <ion-icon name="chatbubbles-outline"></ion-icon>
                     <span class="uppercase text-xs"><a href="/chat">Chat</a></span>
+                </x-nav-item>
+
+                <x-nav-item>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="uppercase text-xs"><a href="/account">Account</a></span>
                 </x-nav-item>
             </div>
             <div class="flex items-center md:hidden" onclick="openNav()">

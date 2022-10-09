@@ -1,3 +1,4 @@
+<x-head>Reservoir | Login</x-head>
 <x-layout>
 
     <main class="px-6 py-8 flex items-center justify-center">

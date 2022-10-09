@@ -1,22 +1,23 @@
+<x-head>Reservoir | Home</x-head>
 <x-layout>
+    <x-cart/>
 
     <main class="grid gap-2 lg:px-[250px] py-5">
-        <div class="grid grid-cols-1 bg-orange-50 lg:gap-1 lg:grid-cols-8 ">
-            <div class="bg-green-50 h-auto lg:col-span-5 overflow:hidden">
+        <div class="grid grid-cols-1 bg-orange-50 h-60 lg:gap-1 lg:grid-cols-8 overflow-y-hidden">
+            <div class="bg-green-50 h-auto lg:col-span-5 z-0 ">
                 <x-carousel />
             </div>
 
             <div class="bg-white text-white h-auto lg:col-span-3 ">
                 <div class="grid gap-1 lg:grid-rows-2">
-                    <div class="bg-cyan-300 h-fit lg:row-span-1">
-                        <h2>n</h2>
+                    <div class="bg-cyan-300 h-auto lg:row-span-1">
                         <h2>n</h2>
                         <h2>n</h2>
                         <h2>n</h2>
                         <h2>n</h2>
                         <h2>n</h2>
                     </div>
-                    <div class="bg-cyan-300 h-fit lg:row-span-1">
+                    <div class="bg-cyan-300 h-auto lg:row-span-1">
                         <h1>n</h1>
                         <h2>n</h2>
                         <h2>n</h2>
@@ -29,34 +30,34 @@
         </div>
 
         <div class="p-5 bg-white mt-2 lg:mt-5">
-            <div class="grid grid-cols-3  gap-x-10 gap-y-4 items-center justify-center sm:grid-cols-5 lg:flex">
+            <div class="grid grid-cols-3  gap-x-20 gap-y-4 items-center justify-center sm:grid-cols-5 lg:flex">
                 <x-box>
-                    <div class="p-2 w-12 h-12 rounded-lg border flex items-center justify-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/217/217853.png" alt="">
+                    <div class="p-2 w-20 h-20 rounded-lg border flex items-center justify-center">
+                        <img src="{{asset("img/money.png")}}" alt="">
                     </div>
                     <span class="text-xs text-center">Coin Rewards</span>
                 </x-box>
                 <x-box>
-                    <div class="p-2 w-12 h-12 rounded-lg border flex items-center justify-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/6831/6831000.png" alt="">
+                    <div class="p-2 w-20 h-20 rounded-lg border flex items-center justify-center">
+                        <img src="{{asset("img/free-delivery.png")}}" alt="">
                     </div>
                     <span class="text-xs text-center">Free Shipping</span>
                 </x-box>
                 <x-box>
-                    <div class="p-2 w-12 h-12 rounded-lg border flex items-center justify-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/869/869649.png" alt="">
+                    <div class="p-2 w-20 h-20 rounded-lg border flex items-center justify-center">
+                        <img src="{{asset("img/discount-voucher.png")}}" alt="">
                     </div>
                     <span class="text-xs text-center">Vouchers</span>
                 </x-box>
                 <x-box>
-                    <div class="p-2 w-12 h-12 rounded-lg border flex items-center justify-center">
-                        <img src="https://static.thenounproject.com/png/3312623-200.png" alt="">
+                    <div class="p-2 w-20 h-20 rounded-lg border flex items-center justify-center">
+                        <img src="{{asset("img/customer-loyalty.png")}}" alt="">
                     </div>
                     <span class="text-xs text-center">Reservoir Loyalty</span>
                 </x-box>
                 <x-box>
-                    <div class="p-2 w-12 h-12 rounded-lg border flex items-center justify-center">
-                        <img src="https://static.thenounproject.com/png/1968982-200.png" alt="">
+                    <div class="p-2 w-20 h-20 rounded-lg border flex items-center justify-center">
+                        <img src="{{asset("img/sign.png")}}" alt="">
                     </div>
                     <span class="text-xs text-center">All Promos</span>
                 </x-box>

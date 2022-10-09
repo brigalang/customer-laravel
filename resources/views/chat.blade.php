@@ -1,4 +1,5 @@
-<x-head/>
+<x-head>Reservoir | Chat</x-head>
+
 <body>
 
     <div class="flex h-screen antialiased px-10 text-gray-800">
