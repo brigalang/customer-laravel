@@ -3,7 +3,7 @@
 <body class="font-Poppins">
     <main class="">
         <header
-            class="flex flex-row-reverse shadow-md justify-between relative z-1 gap-2 p-5 md:items-center md:justify-center md:p-10 md:grid md:grid-cols-8 lg:p-10 ">
+            class="flex flex-row-reverse shadow-md mb-10 justify-between relative z-1 gap-2 p-5 md:items-center md:justify-center md:p-10 md:grid md:grid-cols-8 lg:p-10 ">
             <div class="p-1.5 rounded-xl border gap-x-2 flex items-center md:col-span-2">
                 <input type="text" class="placeholder:text-gray-400 outline-0 rounded-xl w-full" placeholder="search">
                 <a href=""><ion-icon name="search-outline" class="ml-1 mr-2"></ion-icon></a>

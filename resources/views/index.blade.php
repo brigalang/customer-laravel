@@ -85,18 +85,21 @@
         </div>
 
         <x-panel class="h-60 my-4">Top Products</x-panel>
+        <div class=" object-left-top">Store List</div>
+        <x-panel class="h-fit mb-3 flex items-center font-bold p-2">
 
-        <x-panel class="h-10 mb-3 flex items-center font-bold p-2">Store List</x-panel>
+            <div class="grid grid-cols-3 gap-4 h-fit lg:grid-cols-6">
+                <x-store-card><img src="{{ asset('img\logo1.png')}}"></x-store-card>
+                <x-store-card><img src="{{ asset('img\logo2.png')}}"></x-store-card>
+                <x-store-card><img src="{{ asset('img\logo3.png')}}"></x-store-card>
+                <x-store-card><img src="{{ asset('img\logo4.png')}}"></x-store-card>
+                <x-store-card><img src="{{ asset('img\logo5.png')}}"></x-store-card>
+                <x-store-card><img src="{{ asset('img\logo6.png')}}"></x-store-card>
 
-        <div class="grid grid-cols-3 gap-2 h-fit lg:grid-cols-6">
-            <x-store-card><img src="{{ asset('img\logo1.png')}}"></x-store-card>
-            <x-store-card><img src="{{ asset('img\logo2.png')}}"></x-store-card>
-            <x-store-card><img src="{{ asset('img\logo3.png')}}"></x-store-card>
-            <x-store-card><img src="{{ asset('img\logo4.png')}}"></x-store-card>
-            <x-store-card><img src="{{ asset('img\logo5.png')}}"></x-store-card>
-            <x-store-card><img src="{{ asset('img\logo6.png')}}"></x-store-card>
+            </div>
+        </x-panel>
 
-        </div>
+
 
 
     </main>

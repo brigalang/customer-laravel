@@ -1,1 +1,1 @@
-<div class="col-span-1 flex items-center justify-center border bg-white h-fit">{{ $slot }}</div>
+<div class="col-span-1 flex items-center justify-center rounded-full bg-white h-fit">{{ $slot }}</div>
